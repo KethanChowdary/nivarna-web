@@ -167,10 +167,10 @@ export default function NivarnaLanding() {
         <div className="relative mx-auto grid max-w-6xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-[1.05fr_.95fr] lg:items-stretch lg:py-24">
           <div className="max-w-2xl lg:self-center">
             <h1 style={serif} className="max-w-xl text-5xl font-medium leading-[1.05] tracking-tight text-white sm:text-6xl">
-              Where Financial Expertise Meets AI
+              Accounting, Audit &amp; Tax Services in Bengaluru
             </h1>
             <p className="mt-7 max-w-md text-base leading-relaxed text-slate-300">
-              Managing finances shouldn't mean spending hours on routine accounting, compliance and reporting. We combine Chartered Accountant expertise with AI-powered tools and technology to simplify financial processes, reduce manual work and deliver insights that help you focus on your business. {/*[cite: 2] */}
+              Nivarna Advisors is a Chartered Accountant-led advisory firm in Bengaluru, helping businesses with bookkeeping, tax compliance, financial audits and virtual CFO support. We combine professional expertise with AI-enabled tools to simplify financial processes and provide practical insights.
             </p>
             <div className="mt-9 flex flex-wrap gap-4">
               <a href="#contact" className="inline-flex items-center gap-2 rounded-full bg-[#b68a42] px-6 py-3 text-sm font-semibold text-[#08233a] hover:bg-[#d7b66f]">
@@ -223,7 +223,7 @@ export default function NivarnaLanding() {
       <section id="services" className="mx-auto max-w-6xl px-4 py-24 sm:px-6">
         <div className="flex flex-col items-start gap-4 sm:flex-row sm:flex-wrap sm:items-end sm:justify-between sm:gap-6">
           <div className="max-w-xl">
-            <h2 style={serif} className="text-3xl font-medium text-slate-900 sm:text-4xl">Our Services</h2>
+            <h2 style={serif} className="text-3xl font-medium text-slate-900 sm:text-4xl">Accounting, Audit, Tax &amp; Advisory Services</h2>
           </div>
           <div className="flex gap-2">
             <button onClick={() => scrollCards(-1)} aria-label="Previous" className="rounded-full border border-slate-300 p-2.5 hover:border-slate-500"><ChevronLeft className="h-4 w-4" /></button>
