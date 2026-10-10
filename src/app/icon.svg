@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Deep Navy Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d213b"/>
+      <stop offset="100%" stop-color="#040914"/>
+    </linearGradient>
+    
+    <!-- Gold Gradient for the Chevron -->
+    <linearGradient id="goldGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9A7A3A"/>
+      <stop offset="35%" stop-color="#CFAE67"/>
+      <stop offset="100%" stop-color="#F4E0A5"/>
+    </linearGradient>
+    
+    <!-- Subtle Drop Shadow for Depth -->
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- iOS-style Squircle Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+
+  <!-- Centered and Scaled Monogram Group -->
+  <g transform="translate(256, 256) scale(1.35) translate(-256, -256)">
+    
+    <!-- Letter N (Crisp White/Silver) -->
+    <g fill="#F4F5F7" filter="url(#dropShadow)">
+      <!-- Left Stem -->
+      <rect x="116" y="156" width="40" height="200"/>
+      <!-- Right Stem -->
+      <rect x="216" y="156" width="40" height="200"/>
+      <!-- Diagonal -->
+      <polygon points="116,156 156,156 256,356 216,356"/>
+    </g>
+
+    <!-- Letter A / Lambda Chevron (Gold) -->
+    <!-- Positioned to seamlessly interlock with the base of the 'N' -->
+    <polygon points="306,156 216,356 260,356 306,254 352,356 396,356" fill="url(#goldGrad)" filter="url(#dropShadow)"/>
+    
+  </g>
+</svg>

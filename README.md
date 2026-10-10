@@ -20,6 +20,16 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Consultation email
+
+The consultation form sends notifications directly to `nivarna.advisors@gmail.com` through Resend.
+Copy `.env.example` to `.env.local`, set `RESEND_API_KEY`, and verify the
+`updates.nivarna.in` sending domain in Resend. Add Resend's supplied DNS records
+to Cloudflare, then set `RESEND_FROM_EMAIL` to an address on that verified
+domain. This sends form notifications directly to Gmail and does not depend on
+Cloudflare Email Routing. Configure the same variables in the production
+environment before enabling the form there.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

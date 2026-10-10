@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Fraunces, Geist, Geist_Mono, Manrope } from "next/font/google";
 import "./globals.css";
 import { siteUrl } from "./site";
 
@@ -13,28 +13,38 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const fraunces = Fraunces({
+  variable: "--font-fraunces",
+  subsets: ["latin"],
+  axes: ["opsz"],
+});
+
+const manrope = Manrope({
+  variable: "--font-manrope",
+  subsets: ["latin"],
+});
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "Nivarna Advisors",
   description:
-    "Chartered Accountant-led accounting, bookkeeping, audit, tax and virtual CFO services for businesses in Bengaluru. Practical financial advice from Nivarna Advisors.",
+    "Chartered Accountant-led accounting, tax compliance and litigation support, virtual CFO, MIS reporting, business advisory and management consulting for growing businesses.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
-    locale: "en_IN",
     siteName: "Nivarna Advisors",
-    title: "Accounting, Audit & Tax Services in Bengaluru | Nivarna Advisors",
+    title: "Accounting, Tax & Business Advisory | Nivarna Advisors",
     description:
-      "Chartered Accountant-led accounting, bookkeeping, audit, tax and virtual CFO services for businesses in Bengaluru.",
+      "Practical accounting, tax compliance, virtual CFO, MIS reporting, business advisory and management consulting for growing businesses.",
     url: siteUrl,
   },
   twitter: {
     card: "summary",
-    title: "Accounting, Audit & Tax Services in Bengaluru | Nivarna Advisors",
+    title: "Accounting, Tax & Business Advisory | Nivarna Advisors",
     description:
-      "Chartered Accountant-led accounting, bookkeeping, audit, tax and virtual CFO services for businesses in Bengaluru.",
+      "Practical accounting, tax compliance, virtual CFO, MIS reporting, business advisory and management consulting for growing businesses.",
   },
   robots: {
     index: true,
@@ -55,16 +65,16 @@ const organizationJsonLd = {
   "@id": `${siteUrl}/#organization`,
   name: "Nivarna Advisors",
   url: siteUrl,
-  logo: `${siteUrl}/icon.png`,
+  logo: `${siteUrl}/nivarna-logo.jpeg`,
   description:
-    "Chartered Accountant-led accounting, bookkeeping, audit, tax and business advisory services.",
+    "Chartered Accountant-led accounting, tax, virtual CFO and business advisory services for growing businesses.",
   knowsAbout: [
     "Accounting and bookkeeping",
-    "Financial statement audit",
-    "Internal audit",
-    "Tax compliance and advisory",
+    "Tax compliance",
+    "Business advisory",
     "Virtual CFO services",
-    "Finance transformation",
+    "Management reporting and dashboards",
+    "Management consulting",
   ],
 };
 
@@ -72,7 +82,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${fraunces.variable} ${manrope.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <script
