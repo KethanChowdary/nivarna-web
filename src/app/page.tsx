@@ -216,7 +216,7 @@ const siteData = {
     },
     {
       title: 'Ongoing Retainer Clients',
-      desc: 'Businesses seeking ongoing accounting, GST, taxation, UAE VAT, and end-to-end financial management support.',
+      desc: 'Businesses seeking ongoing accounting, GST, taxation, UAE VAT, and end-to-end financial controller and management support.',
       icon: ShieldCheck,
     },
   ],
