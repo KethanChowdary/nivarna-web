@@ -26,25 +26,25 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Nivarna Advisors",
+  title: "Nivarna Advisors | Beyond Numbers. Built for Better Decisions",
   description:
-    "Chartered Accountant-led accounting, tax compliance and litigation support, virtual CFO, MIS reporting, business advisory and management consulting for growing businesses.",
+    "Chartered Accountant-led advisory firm combining professional CA expertise with AI tools for accounting, risk management, tax compliance, virtual CFO, and business advisory.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     siteName: "Nivarna Advisors",
-    title: "Accounting, Tax & Business Advisory | Nivarna Advisors",
+    title: "Nivarna Advisors | Beyond Numbers. Built for Better Decisions",
     description:
-      "Practical accounting, tax compliance, virtual CFO, MIS reporting, business advisory and management consulting for growing businesses.",
+      "Chartered Accountant expertise combined with AI-powered tools to simplify accounting, compliance, tax, risk management and financial decision-making.",
     url: siteUrl,
   },
   twitter: {
     card: "summary",
-    title: "Accounting, Tax & Business Advisory | Nivarna Advisors",
+    title: "Nivarna Advisors | Beyond Numbers. Built for Better Decisions",
     description:
-      "Practical accounting, tax compliance, virtual CFO, MIS reporting, business advisory and management consulting for growing businesses.",
+      "Chartered Accountant expertise combined with AI-powered tools to simplify accounting, compliance, tax, risk management and financial decision-making.",
   },
   robots: {
     index: true,
@@ -67,14 +67,16 @@ const organizationJsonLd = {
   url: siteUrl,
   logo: `${siteUrl}/nivarna-logo.jpeg`,
   description:
-    "Chartered Accountant-led accounting, tax, virtual CFO and business advisory services for growing businesses.",
+    "Chartered Accountant-led advisory firm combining professional expertise with AI-driven workflows for accounting, risk management, tax compliance, virtual CFO, and business advisory.",
   knowsAbout: [
     "Accounting and bookkeeping",
-    "Tax compliance",
+    "Risk management and internal controls",
+    "Tax compliance and litigation support",
+    "Tax advisory",
+    "Finance transformation",
     "Business advisory",
     "Virtual CFO services",
-    "Management reporting and dashboards",
-    "Management consulting",
+    "Incorporation and regulatory compliance",
   ],
 };
 
