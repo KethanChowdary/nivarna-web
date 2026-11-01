@@ -32,7 +32,7 @@ import {
   SlidersHorizontal,
   LayoutGrid,
 } from 'lucide-react';
-import nivarnaLogo from '../../public/nivarna-logo.jpeg';
+import nivarnaLogo from '../../public/nivarna-logo-light.png';
 import nivarnaLogoDark from '../../public/nivarna-logo-transparent.png';
 
 const STYLE_BLOCK = `
@@ -402,7 +402,7 @@ export default function NivarnaLanding() {
       </div>
 
       {/* Nav */}
-      <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur-md">
+      <header className="sticky top-0 z-40 border-b border-slate-200 bg-white">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
           <a href="#" aria-label="Nivarna Advisors home">
             <Logo />
